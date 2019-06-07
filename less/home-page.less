@@ -46,6 +46,10 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      width: 100%;
+      padding: 0;}
+
     .walk-text {
       width: 50%;
 
@@ -56,9 +60,10 @@
       p {
         margin-bottom: 26px;
       }
-
       .btn {
+        .button-creator(200px, 45px, @btn-bg-color,@sea-shell, 1.8rem)
       }
+
     }
 
     .walk-img {
@@ -71,5 +76,12 @@
         border-radius: 10px;
       }
     }
+  }
+  .intro img{ 
+    border-radius: 3px;
+  }
+  
+  @media @mobile {
+    background-color: red;
   }
 }// home
